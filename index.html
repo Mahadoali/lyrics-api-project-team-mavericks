@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LyricMe App</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <header>
+        <h1>LyricMe</h1>
+        <p>Find lyrics and discover artist info!</p>
+    </header>
+    <main>
+        <section class="search-section">
+            <h2>Find Your Lyrics</h2>
+            <form id="lyric-search-form">
+                <input type="text" id="artist-input" placeholder="Artist Name" required>
+                <input type="text" id="song-input" placeholder="Song Title" required>
+                <button type="submit">Search Lyrics</button>
+            </form>
+        </section>
+        <section class="results-section">
+            <div id="artist-info">
+                </div>
+            <div id="lyrics-display">
+                </div>
+            <div class="actions">
+                <button id="copy-lyrics-btn" style="display: none;">Copy Lyrics</button>
+                <button id="save-lyrics-btn" style="display: none;">Save Lyrics</button>
+            </div>
+            <div id="mood-tagging" class="mood-tagging" style="display: none;">
+                <h3>Tag Moods:</h3>
+                <input type="text" id="mood-input" placeholder="Enter mood (e.g., happy, sad)">
+                <button id="add-mood-btn">Add Mood</button>
+                <div id="current-moods">
+                    </div>
+            </div>
+        </section>
+        <section class="saved-lyrics-section">
+            <h2>Saved Lyrics</h2>
+            <div id="saved-lyrics-list">
+                </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 LyricMe App</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
